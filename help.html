@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>uBattery Help - How to Understand Battery Health, Capacity & Usage</title>
+
+<meta name="description" content="Learn how to understand battery health, capacity, discharge rate, temperature, and usage behavior using uBattery. Complete guide for analyzing laptop and UPS battery performance.">
+
+<meta name="keywords" content="battery health guide, battery capacity explanation, discharge rate meaning, battery temperature safe range, laptop battery analysis, UPS battery monitoring, uBattery help">
+
+<meta name="author" content="Ari Sohandri Putra">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://ubattery.github.io/help.html">
+
+<!-- Open Graph -->
+<meta property="og:title" content="uBattery Help Guide">
+<meta property="og:description" content="Complete guide to understanding battery health, capacity, and behavior using uBattery.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ubattery.github.io/help.html">
+<meta property="og:image" content="https://ubattery.github.io/bin/uBattery.png">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="uBattery Help Guide">
+<meta name="twitter:description" content="Understand battery health, usage, and performance with this detailed guide.">
+<meta name="twitter:image" content="https://ubattery.github.io/bin/uBattery.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<style type="text/css">
+a:link {
+	color: #FF3300;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #FF3300;
+}
+a:hover {
+	text-decoration: none;
+	color: #000066;
+}
+a:active {
+	text-decoration: none;
+	color: #FF3300;
+}
+.style2 {font-size: small}
+</style>
+
+</head>
+
+<body>
+<table width="100%" height="720" border="0" cellpadding="5" cellspacing="5">
+  <tr>
+    <td width="9%" height="127" valign="top"><table width="95" border="0">
+      <tr>
+        <td><img src="bin/uBattery.png" width="80" /></td>
+      </tr>
+      <tr>
+        <td align="center"><strong>uBattery</strong><hr /></td>
+      </tr>
+      <tr>
+        <td><a href="index.html">Home</a></td>
+      </tr>
+      <tr>
+        <td><a href="download.html">Download</a></td>
+      </tr>
+      <tr>
+        <td><a href="help.html">Help</a></td>
+      </tr>
+    </table></td>
+    <td width="54%" valign="top"><p data-start="0" data-end="171">Here is a  guide on how to understand <strong data-start="60" data-end="72">uBattery</strong> to evaluate both <strong data-start="90" data-end="108">battery health</strong> and <strong data-start="113" data-end="133">battery behavior</strong> based on the information it provides:</p>    
+      <h1 data-section-id="e8onxy" data-start="178" data-end="212"><span role="text"><strong data-start="180" data-end="212">1. Evaluating Battery Health</strong></span></h1>
+      <p data-start="214" data-end="244">Focus on these two key values:</p>
+      <h3 data-section-id="rkg2ag" data-start="246" data-end="293"><span role="text"><strong data-start="250" data-end="293">Design Capacity vs Full Charge Capacity</strong></span></h3>
+      <ul data-start="294" data-end="426">
+        <li data-section-id="l77wx" data-start="294" data-end="366"> <strong data-start="296" data-end="315">Design Capacity</strong> &rarr; the original capacity when the battery was new </li>
+        <li data-section-id="ohtdl7" data-start="367" data-end="426"> <strong data-start="369" data-end="393">Full Charge Capacity</strong> &rarr; the current maximum capacity </li>
+      </ul>
+      <h3 data-section-id="wfkw1k" data-start="428" data-end="447">How to read it:</h3>
+      <ul data-start="448" data-end="549">
+        <li data-section-id="qnonyw" data-start="448" data-end="505"> Values close to each other &rarr; battery is still healthy </li>
+        <li data-section-id="icwuon" data-start="506" data-end="549"> Large difference &rarr; battery has degraded </li>
+      </ul>
+      <h3 data-section-id="kxyt5o" data-start="551" data-end="570">Simple formula:</h3>
+      <p data-start="571" data-end="634">Health (%) =<br data-start="583" data-end="586" />
+        (Full Charge Capacity / Design Capacity) &times; 100</p>
+      <p data-start="636" data-end="673">Example:<br />
+        30.325 / 32.560 &asymp; <strong data-start="666" data-end="673">93%</strong></p>
+      <h3 data-section-id="11gjh1y" data-start="675" data-end="694">Interpretation:</h3>
+      <ul data-start="695" data-end="791">
+        <li data-section-id="1476tf4" data-start="695" data-end="718"> 90&ndash;100% &rarr; Excellent </li>
+        <li data-section-id="1anlsj2" data-start="719" data-end="736"> 80&ndash;90% &rarr; Good </li>
+        <li data-section-id="10h35o2" data-start="737" data-end="759"> 70&ndash;80% &rarr; Degrading </li>
+        <li data-section-id="1cqr6z5" data-start="760" data-end="791"> &lt;70% &rarr; Consider replacement </li>
+      </ul>      
+      <h1 data-section-id="1gycw0q" data-start="798" data-end="842"><span role="text"><strong data-start="800" data-end="842">2. Understanding Real Remaining Energy</strong></span></h1>
+      <h3 data-section-id="1f72vtn" data-start="844" data-end="868"><span role="text"><strong data-start="848" data-end="868">Current Capacity</strong></span></h3>
+      <p data-start="869" data-end="926">Shows the actual remaining energy, not just a percentage.</p>
+      <p data-start="928" data-end="946"> Why it matters:</p>
+      <ul data-start="947" data-end="1040">
+        <li data-section-id="1umxec2" data-start="947" data-end="991"> More accurate than percentage indicators </li>
+        <li data-section-id="mn2eth" data-start="992" data-end="1040"> Can be used to estimate remaining usage time </li>
+      </ul>
+      <hr data-start="1042" data-end="1045" />
+      <h1 data-section-id="ump3y3" data-start="1047" data-end="1092"><span role="text"><strong data-start="1049" data-end="1092">3. Understanding Battery Usage Behavior</strong></span></h1>
+      <h3 data-section-id="p18bsh" data-start="1094" data-end="1129"><span role="text"><strong data-start="1098" data-end="1129">Discharge Rate (mW / Watts)</strong></span></h3>
+      <p data-start="1130" data-end="1189">This is the most important parameter for behavior analysis.</p>
+      <ul data-start="1191" data-end="1263">
+        <li data-section-id="1ii4ws9" data-start="1191" data-end="1222"> Low value &rarr; efficient usage </li>
+        <li data-section-id="1xsohpi" data-start="1223" data-end="1263"> High value &rarr; heavy power consumption </li>
+      </ul>
+      <h3 data-section-id="4kv3jy" data-start="1265" data-end="1287">General guideline:</h3>
+      <ul data-start="1288" data-end="1388">
+        <li data-section-id="opcj9x" data-start="1288" data-end="1321"> 3&ndash;6 W &rarr; idle / very light use </li>
+        <li data-section-id="iqerp7" data-start="1322" data-end="1347"> 7&ndash;15 W &rarr; normal usage </li>
+        <li data-section-id="ky68t4" data-start="1348" data-end="1388">20 W &rarr; heavy load (gaming, rendering)</li>
+      </ul>
+      <hr data-start="1390" data-end="1393" />
+      <h1 data-section-id="a16fxr" data-start="1395" data-end="1432"><span role="text"><strong data-start="1397" data-end="1432">4. Estimating Remaining Runtime</strong></span></h1>
+      <p data-start="1434" data-end="1438">Use:</p>
+      <ul data-start="1439" data-end="1485">
+        <li data-section-id="wiitcb" data-start="1439" data-end="1464"> Current Capacity (Wh) </li>
+        <li data-section-id="lufos8" data-start="1465" data-end="1485"> Discharge Rate (W) </li>
+      </ul>
+      <h3 data-section-id="1wqhmpe" data-start="1487" data-end="1499">Formula:</h3>
+      <p data-start="1500" data-end="1538">Time (hours) = Energy (Wh) / Power (W)</p>
+      <p data-start="1540" data-end="1596"> This gives a real-world estimate, not a system guess.</p>
+      <hr data-start="1598" data-end="1601" />
+      <h1 data-section-id="1cxe9ey" data-start="1603" data-end="1643"><span role="text"><strong data-start="1605" data-end="1643">5. Understanding Charging Behavior</strong></span></h1>
+      <h3 data-section-id="1ir613y" data-start="1645" data-end="1664"><span role="text"><strong data-start="1649" data-end="1664">Charge Rate</strong></span></h3>
+      <p data-start="1665" data-end="1704">Shows how fast the battery is charging.</p>
+      <p data-start="1706" data-end="1721">Interpretation:</p>
+      <ul data-start="1722" data-end="1817">
+        <li data-section-id="1w62874" data-start="1722" data-end="1752"> High value &rarr; fast charging </li>
+        <li data-section-id="1exx35v" data-start="1753" data-end="1817"> Lower value &rarr; battery nearing full or system limiting charge </li>
+      </ul>
+      <hr data-start="1819" data-end="1822" />
+      <h1 data-section-id="12skzfi" data-start="1824" data-end="1855"><span role="text"><strong data-start="1826" data-end="1855">6. Monitoring Temperature</strong></span></h1>
+      <h3 data-section-id="61fjvz" data-start="1857" data-end="1876">Why it matters:</h3>
+      <p data-start="1877" data-end="1943">Temperature is one of the main factors affecting battery lifespan.</p>
+      <h3 data-section-id="11gjh1y" data-start="1945" data-end="1964">Interpretation:</h3>
+      <ul data-start="1965" data-end="2018">
+        <li data-section-id="1mxhbcw" data-start="1965" data-end="1981"> &lt;40&deg;C &rarr; Safe </li>
+        <li data-section-id="1il4u6q" data-start="1982" data-end="2000"> 40&ndash;50&deg;C &rarr; Warm </li>
+        <li data-section-id="ww2eyw" data-start="2001" data-end="2018">50&deg;C &rarr; Risky</li>
+      </ul>
+      <p data-start="2020" data-end="2078"> Consistently high temperature accelerates battery wear.</p>
+      <hr data-start="2080" data-end="2083" />
+      <h1 data-section-id="7psmd5" data-start="2085" data-end="2115"><span role="text"><strong data-start="2087" data-end="2115">7. Understanding Voltage</strong></span></h1>
+      <p data-start="2117" data-end="2161">Voltage reflects internal battery condition:</p>
+      <ul data-start="2163" data-end="2286">
+        <li data-section-id="188txms" data-start="2163" data-end="2182"> Stable &rarr; normal </li>
+        <li data-section-id="1jzj166" data-start="2183" data-end="2227"> Sudden drops &rarr; possible battery weakness </li>
+        <li data-section-id="1tjwaxu" data-start="2228" data-end="2286"> Fluctuations &rarr; potential cell imbalance or instability </li>
+      </ul>
+      <hr data-start="2288" data-end="2291" />
+      <h1 data-section-id="141t1oh" data-start="2293" data-end="2340"><span role="text"><strong data-start="2295" data-end="2340">8. Reading the Graph (Behavior Over Time)</strong></span></h1>
+      <p data-start="2342" data-end="2387">The graph helps visualize real-time behavior:</p>
+      <h3 data-section-id="1cr67jb" data-start="2389" data-end="2408">Normal pattern:</h3>
+      <ul data-start="2409" data-end="2451">
+        <li data-section-id="11du8s8" data-start="2409" data-end="2451"> Smooth, gradual decline &rarr; stable usage </li>
+      </ul>
+      <h3 data-section-id="1cpfw6u" data-start="2453" data-end="2471">Warning signs:</h3>
+      <ul data-start="2472" data-end="2613">
+        <li data-section-id="q47ede" data-start="2472" data-end="2510"> Sudden drops &rarr; battery instability </li>
+        <li data-section-id="1tdid0o" data-start="2511" data-end="2554"> Sharp spikes &rarr; inconsistent power usage </li>
+        <li data-section-id="zd3w0y" data-start="2555" data-end="2613"> Irregular patterns &rarr; possible system or battery issues </li>
+      </ul>
+      <hr data-start="2615" data-end="2618" />
+      <h1 data-section-id="1w4oqzk" data-start="2620" data-end="2667"><span role="text"><strong data-start="2622" data-end="2667">9. Power Status (Charging vs Discharging)</strong></span></h1>
+      <ul data-start="2669" data-end="2746">
+        <li data-section-id="1meamsk" data-start="2669" data-end="2709"> <strong data-start="2671" data-end="2684">A/C Power</strong> &rarr; connected to charger </li>
+        <li data-section-id="tekkls" data-start="2710" data-end="2746"> <strong data-start="2712" data-end="2723">Offline</strong> &rarr; running on battery </li>
+      </ul>
+      <p data-start="2748" data-end="2771"> Use this to compare:</p>
+      <ul data-start="2772" data-end="2844">
+        <li data-section-id="wgk2o" data-start="2772" data-end="2809"> Performance while charging vs not </li>
+        <li data-section-id="1qewp8f" data-start="2810" data-end="2844"> How quickly the battery drains </li>
+      </ul>
+      <hr data-start="2846" data-end="2849" />
+      <h1 data-section-id="1m679vi" data-start="2851" data-end="2888"><span role="text"><strong data-start="2853" data-end="2888">10. Practical Analysis Approach</strong></span></h1>
+      <p data-start="2890" data-end="2926">To properly understand your battery:</p>
+      <h3 data-section-id="1r6gaoe" data-start="2928" data-end="2946">A. During Idle</h3>
+      <ul data-start="2947" data-end="3000">
+        <li data-section-id="n5ju0" data-start="2947" data-end="2971"> Check discharge rate </li>
+        <li data-section-id="g5za5w" data-start="2972" data-end="3000"> Should be low and stable </li>
+      </ul>
+      <h3 data-section-id="1y9gj6x" data-start="3002" data-end="3025">B. During Heavy Use</h3>
+      <ul data-start="3026" data-end="3094">
+        <li data-section-id="qsq0ca" data-start="3026" data-end="3050"> Observe power spikes </li>
+        <li data-section-id="m3kmj4" data-start="3051" data-end="3094"> Ensure they are within reasonable range </li>
+      </ul>
+      <h3 data-section-id="dtwkzv" data-start="3096" data-end="3117">C. While Charging</h3>
+      <ul data-start="3118" data-end="3176">
+        <li data-section-id="1d1wlpa" data-start="3118" data-end="3176"> Charge rate should decrease near full (this is normal) </li>
+      </ul>
+      <h3 data-section-id="1wjqlfb" data-start="3178" data-end="3209">D. Observe Trends Over Time</h3>
+      <ul data-start="3210" data-end="3276">
+        <li data-section-id="qln7y" data-start="3210" data-end="3245"> Is capacity decreasing quickly? </li>
+        <li data-section-id="gm8gt2" data-start="3246" data-end="3276"> Is power usage increasing? </li>
+      </ul>
+      <hr data-start="3278" data-end="3281" />
+      <h1 data-section-id="7no60p" data-start="3283" data-end="3323"><span role="text"><strong data-start="3285" data-end="3323">11. Signs of a Problematic Battery</strong></span></h1>
+      <p data-start="3325" data-end="3371">Based on uBattery data, warning signs include:</p>
+      <ul data-start="3373" data-end="3559">
+        <li data-section-id="89so7q" data-start="3373" data-end="3397"> Rapid health decline </li>
+        <li data-section-id="3g69ag" data-start="3398" data-end="3436"> High discharge rate even when idle </li>
+        <li data-section-id="11puhj2" data-start="3437" data-end="3464"> Unstable graph behavior </li>
+        <li data-section-id="1p481lp" data-start="3465" data-end="3489"> Sudden voltage drops </li>
+        <li data-section-id="dakayq" data-start="3490" data-end="3526"> Faster-than-normal battery drain </li>
+        <li data-section-id="gvrlc6" data-start="3527" data-end="3559"> Frequently high temperatures </li>
+      </ul>
+      <hr data-start="3561" data-end="3564" />
+      <h1 data-section-id="eyz7ic" data-start="3566" data-end="3584"><span role="text"><strong data-start="3568" data-end="3584">Key Takeaway</strong></span></h1>
+      <p data-start="3586" data-end="3621">To understand uBattery effectively:</p>
+      <ul data-start="3623" data-end="3784">
+        <li data-section-id="3tor9o" data-start="3623" data-end="3661"> <strong data-start="3625" data-end="3659">Health &rarr; check capacity values</strong> </li>
+        <li data-section-id="iyzg9o" data-start="3662" data-end="3703"> <strong data-start="3664" data-end="3701">Behavior &rarr; monitor discharge rate</strong> </li>
+        <li data-section-id="1jc678j" data-start="3704" data-end="3738"> <strong data-start="3706" data-end="3736">Safety &rarr; watch temperature</strong> </li>
+        <li data-section-id="1x2jie6" data-start="3739" data-end="3784"> <strong data-start="3741" data-end="3782">Stability &rarr; analyze graph and voltage</strong> </li>
+      </ul>
+      <p data-start="3786" data-end="3826">uBattery stands out because it provides:</p>
+      <ul data-start="3827" data-end="3944">
+        <li data-section-id="1sf25cg" data-start="3827" data-end="3857"> Direct hardware-level data </li>
+        <li data-section-id="1mubrm3" data-start="3858" data-end="3899"> No artificial smoothing or estimation </li>
+        <li data-section-id="x8vr9t" data-start="3900" data-end="3944"> Accurate insights for technical analysis</li>
+      </ul>      </td>
+    <td width="37%" valign="top"><table width="100%" border="0">
+      <tr>
+        <td align="center"><em>uBattery Main Window </em></td>
+      </tr>
+      <tr>
+        <td><img src="bin/uBattery_Main.PNG" width="415" height="641" /></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="25" colspan="3" valign="top"><span class="style2">Copyright (c) 2015 - 2026 Ari Sohandri Putra. All Rights Reserved. </span></td>
+  </tr>
+</table>
+</body>
+</html>
